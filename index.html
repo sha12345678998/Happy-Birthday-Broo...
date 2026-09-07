@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Birthday Avanish</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Finger+Paint&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="decor decor-left">
+  <img src="assets/decor.png" alt="" class="decor-img" />
+</div>
+
+<div class="decor decor-right">
+  <img src="assets/decor.png" alt="" class="decor-img" />
+</div>
+
+<!-- floating sparkle particles -->
+<div class="sparkles">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<!-- floating hearts (populated by JS) -->
+<div class="floating-hearts" id="floatingHearts"></div>
+
+<main id="app">
+
+  <!-- PAGE 1 -->
+  <section class="page active" id="page1">
+    <div class="content">
+      <h1 class="fp title-lg">Hey Bro...</h1>
+      <p class="alice subtitle">I created something special for you......</p>
+      <button class="btn" data-goto="page2">Click to Open</button>
+    </div>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page" id="page2">
+    <div class="content">
+      <h2 class="alice question">Are you ready for a little surprise ?? 👀</h2>
+      <div class="btn-row">
+        <button class="btn" data-goto="page3">Yes ❤</button>
+        <button class="btn" data-goto="page3">Of Course 😍</button>
+      </div>
+      <div class="btn-row">
+        <button class="btn" data-goto="page10">No 😭</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page" id="page3">
+    <div class="content wide">
+      <div class="video-frame">
+        <video controls playsinline preload="metadata">
+          <source src="assets/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <button class="btn next" data-goto="page4">Next ➡</button>
+    </div>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="page" id="page4">
+    <div class="content">
+      <h2 class="alice question">Do you know how much you mean to me ??</h2>
+      <div class="btn-row">
+        <button class="btn" data-goto="page5">A Little 😒</button>
+        <button class="btn" data-goto="page6">A Lot 😍</button>
+      </div>
+      <div class="btn-row">
+        <button class="btn purple" data-goto="page6">Infinite ♾</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 5 -->
+  <section class="page" id="page5">
+    <div class="content">
+      <h2 class="alice statement">No,<br>you matter to me more then anything !!</h2>
+      <button class="btn" data-goto="page4">Next ➡</button>
+    </div>
+  </section>
+
+  <!-- PAGE 6 -->
+  <section class="page" id="page6">
+    <div class="content">
+      <h2 class="alice question">You know what i Love most ??</h2>
+      <button class="btn" data-goto="page7">Click to know</button>
+    </div>
+  </section>
+
+  <!-- PAGE 7 -->
+  <section class="page" id="page7">
+    <div class="content">
+      <h2 class="alice question small-gap">Your Company 😊</h2>
+      <div class="photo-frame">
+        <img src="assets/photo.jpg" alt="Your Company" />
+      </div>
+      <button class="btn" data-goto="page8">Next ➡</button>
+    </div>
+  </section>
+
+  <!-- PAGE 8 -->
+  <section class="page" id="page8">
+    <div class="content">
+      <h1 class="fp title-md">Wait...</h1>
+      <p class="alice statement small">ISN'T TODAY SOMEONE'S VERY SPECIAL BIRTHDAY?? 🎂</p>
+      <button class="btn" data-goto="page9">Who ? 👀</button>
+    </div>
+  </section>
+
+  <!-- PAGE 9 -->
+  <section class="page" id="page9">
+    <div class="content">
+      <h1 class="fp title-you">You
+        <span class="interactive-heart" id="bigHeart" role="button" tabindex="0" aria-label="tap the heart">
+          <svg viewBox="0 0 100 90" class="heart-svg">
+            <defs>
+              <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ff6b81"/>
+                <stop offset="55%" stop-color="#e8305a"/>
+                <stop offset="100%" stop-color="#a3123a"/>
+              </linearGradient>
+            </defs>
+            <path class="heart-path" d="M50 85
+              C20 62 0 42 0 22
+              C0 6 13 -2 27 2
+              C38 5 46 14 50 22
+              C54 14 62 5 73 2
+              C87 -2 100 6 100 22
+              C100 42 80 62 50 85 Z" fill="url(#heartGrad)"/>
+          </svg>
+        </span>
+      </h1>
+      <div class="letter-card">
+        <span class="tape"></span>
+        <p><strong>Happy Birthday, My Brother 🎂</strong></p>
+        <p>Today is all about you,<br>
+        your smile, your happiness.<br>
+        and the beautiful person you are.</p>
+        <p>Thank you for being part of my life<br>
+        and making every moment special.</p>
+        <p>I feel lucky to have you,<br>
+        and I hope this year brings you<br>
+        endless happiness, success, and love.</p>
+        <p>Keep smiling, keep shining.<br>
+        and always stay the amazing person<br>
+        you are.</p>
+        <p>I love you more than words can say 🤍</p>
+        <p><strong>Once again,<br>Happy Birthday Avanish 🤍</strong></p>
+      </div>
+      <button class="btn" data-goto="page1">Go Back 😄</button>
+    </div>
+  </section>
+
+  <!-- PAGE 10 -->
+  <section class="page" id="page10">
+    <div class="content">
+      <h2 class="alice statement">Nooooooooo...... 😭😭</h2>
+      <p class="alice subtitle2">You can't do thisss !!!<br>Go back and choose a different option.</p>
+      <button class="btn" data-goto="page2">Go Back 😄</button>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
